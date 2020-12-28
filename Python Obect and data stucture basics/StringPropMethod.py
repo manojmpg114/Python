@@ -76,4 +76,3 @@ age = 26
 
 print(f'{name} is {age}') #always remember its f then string 
 
-
