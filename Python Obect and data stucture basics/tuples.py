@@ -27,6 +27,6 @@ mylist[0] = "NEW"
 
 print(mylist)
 
-t[0] = 'A' #this would cause an error because tuple objects are immutable and don't support item assignment 
+#t[0] = 'A' #this would cause an error because tuple objects are immutable and don't support item assignment 
 
 #tuples are ideal for data integrity to make sure objects don't get changed or reassigned in larger points of code
