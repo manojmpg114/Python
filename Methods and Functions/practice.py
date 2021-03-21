@@ -72,3 +72,37 @@ print(makes_twenty(2,30))
 
 print(makes_twenty(12,8))
 
+def old_macdonald(text): #using upper
+    firstLetter = text[0]
+    inbetween = text[1:3]
+    fourthletter = text[3]
+    rest = text[3:]
+
+    return firstLetter.upper() + inbetween + fourthletter.upper() + rest
+
+print(old_macdonald("testercase"))
+
+def old_macdonald(text): #using capitalize we can do the same as with upper but with less slices 
+    part1 = text[:3]
+    part2 = text[3:]
+
+    return part1.capitalize() + part2.capitalize()
+
+print(old_macdonald("tacotuesday"))
+
+def reverse_sentence(sentence):
+    wordlist = sentence.split()
+    reversed_wordlist = wordlist[::-1]
+    return ' '.join(reversed_wordlist)
+
+print(reverse_sentence("taco tuesday with the homies"))
+
+def almost_there(num):
+    if (abs(100-num) <= 10) or (abs(200-num) <= 10):
+        return True
+    else:
+        return False
+
+print(almost_there(110))
+
+
