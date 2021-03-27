@@ -31,3 +31,35 @@ def paperdoll(word):
     return result
 
 print(paperdoll("yes"))
+
+def blackjack(a,b,c):
+    if sum([a,b,c]) <= 21:
+        return sum([a,b,c])
+    elif 11 in [a,b,c] and sum([a,b,c]) <= 31:
+        return sum([a,b,c])-10
+    else:
+        return "BUST"
+
+print(blackjack(1,2,43))
+
+def summer_69(arr):
+    total = 0
+    add = True
+
+    for num in arr:
+        while add:
+            if num != 6:
+                total += num
+                break
+            else:
+                add = False
+        while not add:
+            if num != 9:
+                break
+            else:
+                add = True
+                break
+    
+    return total
+
+print(summer_69([1,3,5]))
