@@ -24,6 +24,8 @@ for i in range(1, total_rows +1):
     #print(name_cell.value + ": Table " + str(table_cell.value))
 
     #print(table_cell.value)
-    name_list.append(name_cell.value + ": Table " + str(table_cell.value))
+    #works
+    #name_list.append(name_cell.value + ": Table " + str(table_cell.value))
+    name_list.append("{:<19}".format(name_cell.value) + ": Table " + str(table_cell.value))
 
 print(name_list)
